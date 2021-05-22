@@ -17,6 +17,10 @@ const upload = multer({ storage });
 
 const validations = require ('../middlewares/productValidate');
 
+router.get('/detail/', controladorproduct.detalle);
+router.get('/cart/', controladorproduct.carrito);
+
+
 //Ottonello - 19-5 - Revisar rutas sprint4
 //1. /products (GET) Listado de productos
 router.get('/',controladorproduct.list);
@@ -33,8 +37,6 @@ router.put('/:id/edit', upload.single('image'),validations, controladorproduct.u
 //7. /products/:id (DELETE) Acción de borrado
 router.delete('/:id' , controladorproduct.delete );
 
-router.get('/detail/', controladorproduct.detalle);
-router.get('/cart/', controladorproduct.carrito);
 
 
 module.exports = router;
