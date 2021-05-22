@@ -17,6 +17,7 @@ const upload = multer({ storage });
 
 const validations = require ('../middlewares/productValidate');
 
+//Ottonello - 22-5
 router.get('/detail/', controladorproduct.detalle);
 router.get('/cart/', controladorproduct.carrito);
 
