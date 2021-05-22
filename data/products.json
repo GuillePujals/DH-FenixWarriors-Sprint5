@@ -1,19 +1,19 @@
 [
  {
-  "id": 5,
   "nombre": "Simon of the Desert (Simón del desierto)",
   "descrip": "ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend quam",
-  "image": "img1.jpg",
-  "categ": 2,
-  "cantHabitaciones": 4,
-  "price": 16979,
+  "categ": "2",
+  "habit": "2",
+  "price": "16979",
   "ubicacion": "048 Dapin Plaza",
   "ciudad": "Jagüey Grande",
   "condiciones": "ornare imperdiet sapien urna pretium nisl ut volutpat sapien arcu sed augue aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate",
   "servicios": [
-   {},
-   {}
-  ]
+   "parrilla",
+   "aireacondicionado"
+  ],
+  "id": "5",
+  "image": "img1.jpg"
  },
  {
   "id": 6,
