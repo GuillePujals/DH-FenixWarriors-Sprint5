@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include ('../partials/head') %>
+    <link rel="stylesheet" href="css/login.css">
+
+<body>
+    <%- include ('../partials/header') %>
+<section>
+    <div class="container">
+        <h2><%= user.email %></h2>
+        <img src="/images/users/<%= user.avatar%>">
+        <br>
+        <br>
+        <div class="alert"></div>
+    </div>
+
+</section>
+          
+
+    
+        <%- include ('../partials/footer') %>
+
+    </body>
+    
+    </html>

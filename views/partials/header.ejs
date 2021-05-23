@@ -12,14 +12,16 @@
                 <li><a href="">Escapadas Cercanas</a></li>
                 <li><a href="">Guías turísticas</a></li>
                 <li><a href="">Contacto</a></li>
+                <% if (locals.admLogged){ %>
                 <li><a href="/products">Administrar</a></li>
+                <% } %>
             </ul>
         </nav>
 
         <div class="logo-completo">
-            
-                <img src="/images/logo-casas-alquiler.jpg" alt="" class="logo">
-            
+
+            <img src="/images/logo-casas-alquiler.jpg" alt="" class="logo">
+
             <h1 class="nombre-logo">Serena</h1>
         </div>
 
@@ -27,8 +29,15 @@
             <i class="fas fa-shopping-cart"></i>
         </a>
         <div class="accesos">
-            <a href="/login" class="login">Logueate</a>
-            <a href="/register" class="register">Registrate</a>
+            <ul class="navbar-nav align-items-center"></ul>
+            <% if (locals.isLogged){ %>
+                        Hola: <%= locals.userLogged.email %>
+                    
+                <% } else { %>
+                    <a href="/login" class="login">Logueate</a>
+                    <a href="/register" class="register">Registrate</a>
+                    <% } %>
+             </ul>
         </div>
     </div>
 </header>

@@ -146,5 +146,17 @@
   "password": "$2a$10$k5LKh5G8GN13gG5lc1z9Xel97Sy8NzvxDGeZur5xdLBy9SO5kvoay",
   "avatar": "avatar.jpg",
   "id": 16
+ },
+ {
+  "email": "prueba1@gmail.com",
+  "telefono": "1125636598",
+  "perfil_usr": "publicar",
+  "interes": [
+   "casa",
+   "departamento"
+  ],
+  "password": "$2a$10$LxXzB9G.3GvhD0qU4hM/reqbkSqWKCKsXRrovImPetuqyK7MxAWP.",
+  "avatar": "avatar.jpg",
+  "id": 17
  }
 ]

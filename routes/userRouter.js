@@ -20,6 +20,10 @@ router.get('/login/', guestMiddleware, controladorUser.login);
 router.post('/login/', controladorUser.loginProcess);
 
 // Perfil del usuario
-router.get('/profile/', authMiddleware, controladorUser.loginProcess);
+router.get('/users/profile/', authMiddleware, controladorUser.profile);
+
+// Logout
+router.get('/users/logout/', controladorUser.logout);
+
 
 module.exports = router;

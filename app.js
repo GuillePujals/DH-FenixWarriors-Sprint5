@@ -1,7 +1,11 @@
 const express = require('express')
 const app = express()
 const methodOverride = require('method-override');
-const session = require("express-session")
+const session = require("express-session");
+
+const userLoggedMiddleware = require ('./middlewares/userLoggedMiddleware');
+const admLoggedMiddleware = require ('./middlewares/admLoggedMiddleware');
+
 
 
 const path = require('path');
@@ -19,6 +23,10 @@ app.use(session({
 	resave: false,
 	saveUninitialized: false,
 }));
+
+//Este middleware debe ir después de ssesion
+app.use (userLoggedMiddleware);
+app.use (admLoggedMiddleware);
 
 //Configuramos ejs
 app.set('view engine', 'ejs')  

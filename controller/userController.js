@@ -20,10 +20,10 @@ let userController = {
 
             let isPasswordOk = bcryptjs.compareSync(req.body.contraseña, userToLogin.password)
             if (isPasswordOk) {
-                
+                delete userToLogin.password;
                 req.session.userLogged = userToLogin
                 //console.log(req.session);
-                return res.send("puedes ingresar")
+                return res.redirect ('users/profile');
             }
             return res.render( "users/login", {
                 errors: {
@@ -42,7 +42,12 @@ let userController = {
                 }
             }
         })
-    },        
+    },    
+    profile: (req, res) => {
+          res.render ('users/profile', {
+              user: req.session.userLogged
+          })
+    },
 
     register: (req, res) => {
         res.render('users/register')
@@ -80,6 +85,10 @@ let userController = {
 		let userCreated = userModel.create(userToCreate);
 
 		return res.redirect('/login');        
+    },
+    logout: (req, res) => {
+        req.session.destroy();
+        return res.redirect('/');
     }
 }
 
