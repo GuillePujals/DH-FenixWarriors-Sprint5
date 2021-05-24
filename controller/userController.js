@@ -81,7 +81,7 @@ let userController = {
 		let userToCreate = {
 			...req.body,
 			password: bcryptjs.hashSync(req.body.password, 10),
-            avatar: req.file ? req.file.filename :'avatar.jpg'
+            avatar: req.file ? req.file.filename :'Avatar.jpg'
 		}
 
 		let userCreated = userModel.create(userToCreate);
