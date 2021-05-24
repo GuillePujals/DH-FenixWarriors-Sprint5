@@ -1,19 +1,21 @@
 <header class="main-header">
     <div class="top-bar">
         <input type="checkbox" id="main-hamburger">
-        <label for="main-hamburger"><i class="fas fa-bars"></i>
+        <label for="main-hamburger" class="hamburger"><i class="fas fa-bars"></i>
         </label>
         <nav class="menu-hamburger">
             <ul>
-                <li><a href="/login">Inicio sesión</a></li>
-                <li><a href="/register">Registrate</a></li>
+
                 <li><a href="/">Inicio</a></li>
-                <li><a href="">Ofertas próximas</a></li>
-                <li><a href="">Escapadas Cercanas</a></li>
-                <li><a href="">Guías turísticas</a></li>
-                <li><a href="">Contacto</a></li>
+                <% if (locals.isLogged){ %>
+                    <li><a href="/users/profile">Perfil</a></li>
+                    <li><a href="/users/Logout">Logout</a></li>
+                    <% } else { %>
+                        <li><a href="/login">Logueate</a></li>
+                        <li><a href="/register">Registrate</a></li>
+                        <% } %>
                 <% if (locals.admLogged){ %>
-                <li><a href="/products">Administrar</a></li>
+                    <li><a href="/products">Administrar</a></li>
                 <% } %>
             </ul>
         </nav>
@@ -24,20 +26,26 @@
 
             <h1 class="nombre-logo">Serena</h1>
         </div>
+        <div class="crt-prof">
+            <a href="/products/Cart" class="icono-carrito">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
 
-        <a href="/products/Cart" class="icono-carrito">
-            <i class="fas fa-shopping-cart"></i>
-        </a>
-        <div class="accesos">
-            <ul class="navbar-nav align-items-center"></ul>
             <% if (locals.isLogged){ %>
-                        Hola: <%= locals.userLogged.email %>
-                    
+                <img src="/images/users/<%= locals.userLogged.avatar %>" width="40" style="border-radius: 100%;">
+                <nav class="accesos">
+                    <a href="/users/profile">Perfil</a>
+                    <a href="/users/Logout">Logout</a>
+                </nav>
+
+
                 <% } else { %>
-                    <a href="/login" class="login">Logueate</a>
-                    <a href="/register" class="register">Registrate</a>
-                    <% } %>
-             </ul>
+                    <nav class="accesos">
+                        <a href="/login" class="login">Logueate</a>
+                        <a href="/register" class="register">Registrate</a>
+                        <% } %>
+
+                    </nav>
         </div>
     </div>
 </header>

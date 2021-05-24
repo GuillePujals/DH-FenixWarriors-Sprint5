@@ -7,6 +7,7 @@ function userLoggedMiddleware(req, res, next) {
 
     //Paso las variables para que esten disponibles en todas las vistas
     res.locals.userLogged = req.session.userLogged;
+    
        
    }
     next();

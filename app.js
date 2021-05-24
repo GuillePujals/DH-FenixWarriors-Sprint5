@@ -38,7 +38,7 @@ app.use(express.urlencoded({ extended: false }));
 
 
 //Damos de alta el puerto
-app.listen(puerto || 3000, function() {
+app.listen(puerto || 3030, function() {
     console.log("Servidor corriendo en el puerto 3000");
 });
 

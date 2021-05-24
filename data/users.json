@@ -158,5 +158,17 @@
   "password": "$2a$10$LxXzB9G.3GvhD0qU4hM/reqbkSqWKCKsXRrovImPetuqyK7MxAWP.",
   "avatar": "avatar.jpg",
   "id": 17
+ },
+ {
+  "email": "prueba51@gmail.com",
+  "telefono": "1125632896",
+  "perfil_usr": "alquilar",
+  "interes": [
+   "hotel",
+   "hosteria"
+  ],
+  "password": "$2a$10$XhC85k69HdW.Jggt.g0MhupYmE8gyqBCs2ERDHyNFod4Ovd/c6hZ2",
+  "avatar": "1621864691157_img.jpg",
+  "id": 18
  }
 ]

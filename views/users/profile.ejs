@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <%- include ('../partials/head') %>
-    <link rel="stylesheet" href="css/login.css">
+<%- include ('../partials/head') %>
 
-<body>
-    <%- include ('../partials/header') %>
-<section>
-    <div class="container">
-        <h2><%= user.email %></h2>
-        <img src="/images/users/<%= user.avatar%>">
-        <br>
-        <br>
-        <div class="alert"></div>
-    </div>
 
-</section>
-          
+    <body>
+        <%- include ('../partials/header') %>
+            <section>
+                <div class="container">
+                    <img src="/images/users/<%= user.avatar%>">
+                    <div class="info">
+                        <p>
+                           E-mai: <%= user.email %>
+                        </p>
+                        <p>
+                            Teléfono: <%= user.telefono %>
+                        </p>
+                        <p>
+                            Perfil: <%= user.perfil_usr %>
+                        </p>
+                        <p>Intereses:
+                            <% for(const i of user.interes ){ %>
+                           
+                                <li>
+                                    <%=  user.interes.i %> 
+                                </li>
+                            <% } %>
+                            
+                        </p>
+                    </div>
 
-    
-        <%- include ('../partials/footer') %>
+                </div>
+
+            </section>
+
+
+
+            <%- include ('../partials/footer') %>
 
     </body>
-    
-    </html>
+
+</html>
