@@ -110,11 +110,11 @@
                    
            
 /*================== profile =======================*/         
-.container{
+.containerProf{
     margin-top: 100px;
     display: flex;
 }
-    .container img{
+    .containerProf img{
         margin-left: 0;
         width: 40%;
     }
@@ -246,7 +246,7 @@
     .info p{
         font-size: 25px;
     }
-    .container img{
+    .containerProf img{
         margin-left: 50px;
         width: 30%;
     }
