@@ -128,6 +128,18 @@
             font-size: 15px;
             color: hsl(202, 61%, 50%);
         }
+        .info ul{
+            font-family:Roboto;
+            font-size: 15px;
+            color: hsl(202, 61%, 50%);  
+        }
+
+        .info ul{
+            font-family:Roboto;
+            font-size: 15px;
+            color: hsl(202, 61%, 50%); 
+            padding: 0; 
+        }
 /*================== footer =======================*/
     .redes {
         display: flex;
@@ -237,6 +249,14 @@
     .container img{
         margin-left: 50px;
         width: 30%;
+    }
+    .info ul{
+        font-size: 25px; 
+    }
+
+    .info ul{
+        font-size: 25px;
+       
     }
 }
             

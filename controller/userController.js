@@ -44,10 +44,12 @@ let userController = {
         })
     },    
     profile: (req, res) => {
+               
           res.render ('users/profile', {
               user: req.session.userLogged
+              
           })
-    },
+        },
 
     register: (req, res) => {
         res.render('users/register')

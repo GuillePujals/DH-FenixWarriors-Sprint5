@@ -170,5 +170,18 @@
   "password": "$2a$10$XhC85k69HdW.Jggt.g0MhupYmE8gyqBCs2ERDHyNFod4Ovd/c6hZ2",
   "avatar": "1621864691157_img.jpg",
   "id": 18
+ },
+ {
+  "email": "prueba61@gmail.com",
+  "telefono": "1123654789",
+  "perfil_usr": "alquilar",
+  "interes": [
+   "casa",
+   "hotel",
+   "hosteria"
+  ],
+  "password": "$2a$10$6fWshoMAPckoAa4vxjTJluIOWPj29wkJwpz/wZ1yxop8BTXVzdvgu",
+  "avatar": "avatar.jpg",
+  "id": 19
  }
 ]

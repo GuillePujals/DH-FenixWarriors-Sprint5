@@ -19,14 +19,7 @@
                         <p>
                             Perfil: <%= user.perfil_usr %>
                         </p>
-                        <p>Intereses:
-                            <% for(const i of user.interes ){ %>
-                           
-                                <li>
-                                    <%=  user.interes.i %> 
-                                </li>
-                            <% } %>
-                            
+                        <p>Intereses: <%= user.interes.join (", ") %>
                         </p>
                     </div>
 
