@@ -370,6 +370,9 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
         justify-content: space-around;
         width: 100%;
     }
+    .crt-prof{
+        margin-left: 200px;
+        }
        
 }
 

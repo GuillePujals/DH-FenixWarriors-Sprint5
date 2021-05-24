@@ -236,6 +236,9 @@
                 justify-content: space-around;
                 width: 100%;
             }
+            .crt-prof{
+                margin-left: 200px;
+                }
 }
             
 @media(min-width: 1000px){
